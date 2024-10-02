@@ -1,10 +1,17 @@
+using DAL.EF;
 using DAL.EF.TableModels;
 using DAL.Interfaces;
+using Microsoft.EntityFrameworkCore;
 
 namespace DAL.Repos;
 
 internal class UserRepo : Repo, IRepo<User, string, User>, IAuth
 {
+    
+    public UserRepo(DbContextOptions<BContext> options) : base(options)
+    {
+    }
+    
     public User Create(User obj)
     {
         db.Users.Add(obj);

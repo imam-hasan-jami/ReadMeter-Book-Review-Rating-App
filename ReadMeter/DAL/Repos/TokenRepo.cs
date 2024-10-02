@@ -1,10 +1,17 @@
+using DAL.EF;
 using DAL.EF.TableModels;
 using DAL.Interfaces;
+using Microsoft.EntityFrameworkCore;
 
 namespace DAL.Repos;
 
 internal class TokenRepo : Repo, IRepo<Token, string, Token>
 {
+    
+    public TokenRepo(DbContextOptions<BContext> options) : base(options)
+    {
+    }
+    
     public Token Create(Token obj)
     {
         db.Tokens.Add(obj);

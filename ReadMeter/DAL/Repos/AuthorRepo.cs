@@ -1,3 +1,4 @@
+using DAL.EF;
 using DAL.EF.TableModels;
 using DAL.Interfaces;
 using Microsoft.EntityFrameworkCore;
@@ -6,6 +7,10 @@ namespace DAL.Repos;
 
 internal class AuthorRepo : Repo, IRepo<Author, int, Author>
 {
+    public AuthorRepo(DbContextOptions<BContext> options) : base(options)
+    {
+    }
+    
     public Author Create(Author obj)
     {
         db.Authors.Add(obj);

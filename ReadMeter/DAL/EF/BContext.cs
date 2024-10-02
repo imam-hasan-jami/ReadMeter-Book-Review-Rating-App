@@ -5,6 +5,10 @@ namespace DAL.EF;
 
 public class BContext : DbContext
 {
+    public BContext(DbContextOptions<BContext> options) : base(options)
+    {
+    }
+    
     public DbSet<User> Users { get; set; }
     public DbSet<Author> Authors { get; set; }
     public DbSet<Book> Books { get; set; }
@@ -22,6 +26,12 @@ public class BContext : DbContext
         modelBuilder.Entity<Author>()
             .HasIndex(a => a.Email)
             .IsUnique();
+        
+        modelBuilder.Entity<Review>()
+            .HasOne<User>()
+            .WithMany()
+            .HasForeignKey(r => r.Username)
+            .OnDelete(DeleteBehavior.Restrict);
 
         base.OnModelCreating(modelBuilder);
     }

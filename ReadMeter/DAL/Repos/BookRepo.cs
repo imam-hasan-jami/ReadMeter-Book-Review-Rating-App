@@ -1,10 +1,16 @@
+using DAL.EF;
 using DAL.EF.TableModels;
 using DAL.Interfaces;
+using Microsoft.EntityFrameworkCore;
 
 namespace DAL.Repos;
 
 internal class BookRepo : Repo, IRepo<Book, int, Book>
 {
+    public BookRepo(DbContextOptions<BContext> options) : base(options)
+    {
+    }
+    
     public Book Create(Book obj)
     {
         db.Books.Add(obj);

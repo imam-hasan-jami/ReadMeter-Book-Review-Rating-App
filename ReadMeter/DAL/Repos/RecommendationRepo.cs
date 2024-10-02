@@ -1,10 +1,16 @@
+using DAL.EF;
 using DAL.EF.TableModels;
 using DAL.Interfaces;
+using Microsoft.EntityFrameworkCore;
 
 namespace DAL.Repos;
 
 internal class RecommendationRepo : Repo, IRepo<Recommendation, int, Recommendation>
 {
+    public RecommendationRepo(DbContextOptions<BContext> options) : base(options)
+    {
+    }
+    
     public Recommendation Create(Recommendation obj)
     {
         db.Recommendations.Add(obj);

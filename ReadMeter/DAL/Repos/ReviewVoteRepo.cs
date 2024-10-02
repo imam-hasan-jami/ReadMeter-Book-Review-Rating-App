@@ -1,10 +1,17 @@
+using DAL.EF;
 using DAL.EF.TableModels;
 using DAL.Interfaces;
+using Microsoft.EntityFrameworkCore;
 
 namespace DAL.Repos;
 
 internal class ReviewVoteRepo : Repo, IRepo<ReviewVote, int, ReviewVote>
 {
+    
+    public ReviewVoteRepo(DbContextOptions<BContext> options) : base(options)
+    {
+    }
+    
     public ReviewVote Create(ReviewVote obj)
     {
         db.ReviewVotes.Add(obj);
