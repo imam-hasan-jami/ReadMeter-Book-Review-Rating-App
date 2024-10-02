@@ -1,0 +1,6 @@
+@ReadMeter_HostAddress = http://localhost:5206
+
+GET {{ReadMeter_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
