@@ -1,0 +1,28 @@
+## Ignore Visual Studio temporary files, build results, and
+## build logs
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Oo]bj/
+[Bb]in/
+
+## Ignore NuGet Packages folder
+## packages/
+
+## Ignore build output
+project.lock.json
+project.fragment.lock.json
+*.nupkg
+
+## User-specific files
+*.user
+*.suo
+.vs/
+*.vscode/
+
+## Logs
+*.log
+
+# macOS system files
+.DS_Store
