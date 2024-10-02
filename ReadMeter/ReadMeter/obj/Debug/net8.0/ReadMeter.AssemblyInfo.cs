@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ReadMeter")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+199765761719c7d139f3adf85ae4942d5f64b940")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+72b0a54e5882ca30cb70c6429b9cc6f5467cb49a")]
 [assembly: System.Reflection.AssemblyProductAttribute("ReadMeter")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ReadMeter")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

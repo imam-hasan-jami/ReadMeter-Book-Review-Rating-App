@@ -2,6 +2,10 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReadMeter", "ReadMeter\ReadMeter.csproj", "{0FDB15E2-8D39-441E-8C04-34E12C90A8CD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLL", "BLL\BLL.csproj", "{FFE7C64B-0612-42DC-BE52-44AB4D6319FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{F3FAEA44-21F0-465B-9999-1DEEFDC3FB5F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +16,13 @@ Global
 		{0FDB15E2-8D39-441E-8C04-34E12C90A8CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0FDB15E2-8D39-441E-8C04-34E12C90A8CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0FDB15E2-8D39-441E-8C04-34E12C90A8CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FFE7C64B-0612-42DC-BE52-44AB4D6319FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFE7C64B-0612-42DC-BE52-44AB4D6319FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFE7C64B-0612-42DC-BE52-44AB4D6319FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFE7C64B-0612-42DC-BE52-44AB4D6319FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3FAEA44-21F0-465B-9999-1DEEFDC3FB5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3FAEA44-21F0-465B-9999-1DEEFDC3FB5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3FAEA44-21F0-465B-9999-1DEEFDC3FB5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3FAEA44-21F0-465B-9999-1DEEFDC3FB5F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
